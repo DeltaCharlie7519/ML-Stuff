@@ -21,7 +21,6 @@ h = sigmoid(X*theta);
 
 reg = lambda/(2*m) * (theta(2:end, :)' * theta(2:end,:));
 J = sum(-y .* log(h) - (1-y) .* log(1-h)) * (1/m) + reg;
-
 grad = X' * (h - y) * (1/m) + [0; lambda/m * theta(2:end,:)];
 
 % =============================================================
