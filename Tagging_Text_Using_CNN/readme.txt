@@ -1,0 +1,4 @@
+This Task was pretty challenging as this was my first time seeing a problem out of the shell, I have been working in.
+For this Task, I started out with Converting all training files into a data frame which can be worked upon with different libraries of python, then I proceeded to clean the text in the data frame, when I was done, I thought of dealing the issue with 1vs all classifier using logistic regression, but my accuracy was terrible with that model so I switched to CNN. I started with tokenizing all words and then feeding number of units (300) and then working on the embedding Layer followed by the Dense Layer, I had kept track of Dimensions at all times.
+When I was done with the previous processes, I started training my model with 15 epochs and 256 batch size.
+When the Model was trained, I looped it over the test Docs, converted it to a Data Frame and saved the result.
